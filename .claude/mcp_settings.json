@@ -1,0 +1,23 @@
+{
+    "mcpServers": {
+        "figma": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "figma-developer-mcp",
+                "--figma-api-key",
+                "YOUR_FIGMA_TOKEN_HERE"
+            ]
+        },
+        "angular-cli": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@angular/cli",
+                "mcp",
+                "--experimental-tool",
+                "-E"
+            ]
+        }
+    }
+}
