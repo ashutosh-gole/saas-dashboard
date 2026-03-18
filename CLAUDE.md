@@ -16,7 +16,7 @@ Angular 21 SaaS dashboard application.
 - **Charts**: ngx-echarts + Apache ECharts
 - **Testing**: Vitest (stable default in Angular 21)
 - **Dates**: dayjs
-- **Figma source**: https://www.figma.com/proto/MyQWkpmYwpIu4bWWd7Hcoq/SAAS-Dashboard--Community-?node-id=0-1
+- **Figma source**: https://www.figma.com/proto/MyQWkpmYwpIu4bWWd7Hcoq/SAAS-Dashboard--Community-
 
 ---
 
@@ -514,7 +514,7 @@ onpush_zoneless_migration — experimental: plan OnPush + zoneless migration
 
 ## Figma Source
 
-**URL**: https://www.figma.com/proto/MyQWkpmYwpIu4bWWd7Hcoq/SAAS-Dashboard--Community-?node-id=0-1
+**URL**: https://www.figma.com/proto/MyQWkpmYwpIu4bWWd7Hcoq/SAAS-Dashboard--Community-
 
 When generating components from this Figma file:
 1. Extract exact hex color values — map to Tailwind `theme.extend.colors` in `tailwind.config.js`

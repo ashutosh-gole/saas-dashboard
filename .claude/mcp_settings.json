@@ -6,7 +6,7 @@
                 "-y",
                 "figma-developer-mcp",
                 "--figma-api-key",
-                "YOUR_FIGMA_TOKEN_HERE"
+                ""
             ]
         },
         "angular-cli": {

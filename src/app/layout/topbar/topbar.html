@@ -1,0 +1,46 @@
+<header class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+  <div class="flex items-center justify-between p-4">
+    <!-- Mobile menu button -->
+    <button class="md:hidden text-gray-500 dark:text-gray-400 focus:outline-none">
+      <lucide-icon name="menu" [size]="24" />
+    </button>
+
+    <!-- Search bar -->
+    <div class="flex-1 mx-4 md:mx-8">
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <lucide-icon name="search" [size]="20" class="text-gray-400" />
+        </div>
+        <input
+          type="text"
+          placeholder="Search..."
+          class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+      </div>
+    </div>
+
+    <!-- Right side actions -->
+    <div class="flex items-center space-x-4">
+      <!-- Dark mode toggle -->
+      <button
+        (click)="toggleDarkMode()"
+        class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none">
+        @if (isDarkMode()) {
+          <lucide-icon name="sun" [size]="20" />
+        } @else {
+          <lucide-icon name="moon" [size]="20" />
+        }
+      </button>
+
+      <!-- Notifications -->
+      <button class="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none relative">
+        <lucide-icon name="bell" [size]="20" />
+        <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+      </button>
+
+      <!-- User profile -->
+      <div class="flex items-center space-x-2">
+        <div class="bg-gray-200 border-2 border-dashed rounded-xl w-8 h-8"></div>
+      </div>
+    </div>
+  </div>
+</header>
